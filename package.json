@@ -1,0 +1,17 @@
+{
+  "name": "amplify-labs-ecm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Patryk Milewski <patryk.milewski@ecreationmedia.tv>",
+  "license": "",
+  "private": true,
+  "workspaces": [
+    "amplify/backend/function/ExampleFunc/lib"
+  ],
+  "scripts": {
+    "amplify:ExampleFunc": "(cd amplify/backend/function/ExampleFunc/lib && yarn run build)"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.53"
+  }
+}

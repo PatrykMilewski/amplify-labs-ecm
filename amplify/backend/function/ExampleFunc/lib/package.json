@@ -1,0 +1,21 @@
+{
+  "name": "@amplify-labs-ecm/example-func",
+  "version": "1.0.0",
+  "private": true,
+  "license": "",
+  "scripts": {
+    "build": "esbuild index.ts --sourcemap --bundle --keep-names --platform=node --target=node14 --external:aws-sdk --outdir=../src",
+    "check-types": "tsc",
+    "test": "jest",
+    "coverage": "jest --collect-coverage"
+  },
+  "dependencies": {
+    "@dazn/lambda-powertools-logger": "^1.28.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.83"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.954.0"
+  }
+}
